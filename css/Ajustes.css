@@ -1,0 +1,8 @@
+.recuo{
+  text-indent: 3em;
+}
+.img_background{
+background-image: url(../img/intro1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
