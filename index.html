@@ -11,24 +11,34 @@
 </head>
 <body>
 <!-- SEÇÃO NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-  		<a class="navbar-brand" href="#">Navbar</a>
-  		<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
-  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    		<ul class="navbar-nav">
-	      		<li class="nav-item active">
-	        		<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-	      		</li>
-	      		<li class="nav-item">
-	        		<a class="nav-link" href="#">Link</a>
-	      		</li>
-	      		<li class="nav-item">
-	        		<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-	      		</li>
-    		</ul>
-  		</div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary" id="Navbar">
+  		<div class="container">
+	  		<a class="navbar-brand" href="#Navbar">
+	  			<img src="img/castlevania-logo.png" width="100" height="40" alt="">
+	  		</a>
+	  		<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    		<ul class="navbar-nav ml-auto">
+		      		<li class="nav-item active">
+		        		<a class="nav-link text-light h4" href="itens.html">Itens<span class="sr-only">(current)</span></a>
+		      		</li>
+		      		<li class="nav-item active">
+		        		<a class="nav-link text-light h4" href="#Sobre">Sobre<span class="sr-only">(current)</span></a>
+		      		</li>
+		      		<li class="nav-item active">
+		        		<a class="nav-link text-light h4" href="#Personagens">Personagens<span class="sr-only">(current)</span></a>
+		      		</li>
+		      		<li class="nav-item active">
+		        		<a class="nav-link text-light h4" href="#Screenshots">Screenshots<span class="sr-only">(current)</span></a>
+		      		</li>
+		      		<li class="nav-item active">
+		        		<a class="nav-link text-light h4" href="#Suporte">Suporte<span class="sr-only">(current)</span></a>
+		      		</li>
+	    		</ul>
+	  		</div>
+	  	</div>
 	</nav>
 <!-- SEÇÃO DE INTRODUÇÃO -->
 	<header class="d-flex flex-column flex-md-row justify-content-center p-5 img_background" id="Intro">
@@ -37,7 +47,7 @@
 		    	<div class="col-md-1"></div>
 		    	<div class="col-md-10">
 					<h2 class="py-3 text-white">Aventure-se nesse game no estilo 2D Side-scrolling inovador e criador do gênero metroidvania.</h2>
-					<button type="button" class="my-4 btn btn-outline-light btn-lg">Saiba mais</button>
+					<a class="my-4 btn btn-outline-light btn-lg" href="#Personagens">Saiba mais</a>
 				</div>
 				<div class="col-md-1"></div>
 			</div>
@@ -88,20 +98,6 @@
 							<p class="card-text">Uma jovem caçadora de vampiros e uma parente distante do Clã Belmont. Depois que Richter desapareceu sob a luz da lua cheia, Maria imediatamente partiu para encontrá-lo.</p>
 						</div>
 					</div>
-	            </div>
-	        </div>
-	    </div>
-	</section>
-
-	<section id="Sobre" class="bg-dark">
-	    <div class="container">
-	        <h2 class="py-4 text-center font-weight-bold text-light">Sobre</h2>
-	        <div class="row">
-	            <div class="col-md-6">
-	                <img src="img/sobre.jpg" alt="sobre" align="right" style="height: 300px; max-width: 100%;">
-	            </div>
-	            <div class="col-md-6" align="left">
-	                <p class="lead recuo text-light text-justify">Castlevania: Symphony of the Night é um jogo de ação-aventura 2D desenvolvido e distribuído pela Konami em 1997. Symphony of the Night foi uma obra importante para a série Castlevania. Ele levou a série a um novo patamar, diferente dos jogos de plataforma "estágio-por-estágio" dos títulos anteriores, ele introduziu um novo estilo de jogabilidade com elementos de jogos de RPG, o que foi simulado por muitos de seus sucessores na série.</p>
 	            </div>
 	        </div>
 	    </div>
@@ -191,14 +187,14 @@
 		        <div class="col-md-4">
 		            <h6 class="text-light text-center">Páginas</h6>
 		            <div class="d-flex justify-content-center m-1">
-			            <a href="#" class="btn btn-outline-light btn-sm m-1">Topo</a>
-			            <a href="#" class="btn btn-outline-light btn-sm m-1">Sobre</a>
-			            <a href="#" class="btn btn-outline-light btn-sm m-1">Personagens</a>
+			            <a href="#Navbar" class="btn btn-outline-light btn-sm m-1">Topo</a>
+			            <a href="#Sobre" class="btn btn-outline-light btn-sm m-1">Sobre</a>
+			            <a href="#Personagens" class="btn btn-outline-light btn-sm m-1">Personagens</a>
 		        	</div>
 		        	<div class="d-flex justify-content-center m-1">
-			            <a href="#" class="btn btn-outline-light btn-sm m-1">Itens</a>
-			            <a href="#" class="btn btn-outline-light btn-sm m-1">Screenshots</a>
-			            <a href="#" class="btn btn-outline-light btn-sm m-1">Contato</a>
+			            <a href="itens.html" class="btn btn-outline-light btn-sm m-1">Itens</a>
+			            <a href="#Screenshots" class="btn btn-outline-light btn-sm m-1">Screenshots</a>
+			            <a href="#Suporte" class="btn btn-outline-light btn-sm m-1">Suporte</a>
 		        	</div>
 		        </div>
 		        <div class="col-md-4">
